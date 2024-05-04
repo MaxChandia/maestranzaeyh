@@ -1,0 +1,63 @@
+.NavPages ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex; /* Utilizamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan en múltiples líneas si es necesario */
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: center; /* Centramos horizontalmente los elementos */
+    
+}
+
+.NavPages ul li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Heredar el color del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+
+.image {
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+
+.image img {
+    margin-left: 50px;
+    height: 100%; /* Hacer que la imagen ocupe todo el alto del div */
+}
+
+.image ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex; /* Utilizamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan en múltiples líneas si es necesario */
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: center; /* Centramos horizontalmente los elementos */
+}
+
+.image li {
+    width: 10%;
+    text-align: center; /* Centramos el texto horizontalmente */
+}
+
+.NavPages li {
+    width: 10%;
+    padding: 3px; /* Puedes ajustar el margen si es necesario */
+    margin-right: 80px;
+    color: white;
+    text-align: center; /* Centramos el texto horizontalmente */
+}
+
+.hovered {
+    background-color: rgb(108, 108, 113); /* Cambia el color al pasar el ratón sobre el elemento */
+}
+
+.navbar {
+    background-color: rgb(4, 4, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: 0;
+}
+
+li p {
+    font-size: 14px;
+    font-weight: bold;
+}
