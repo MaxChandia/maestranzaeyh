@@ -18,12 +18,20 @@
     height: 100px;
     background-color: white;
     display: flex;
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .image img {
-    margin-left: 50px;
-    height: 100%; /* Hacer que la imagen ocupe todo el alto del div */
+    margin-left: 100px;
+    height: 100%; 
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
+
 
 .image ul {
     list-style-type: none;
@@ -40,24 +48,63 @@
 }
 
 .NavPages li {
-    width: 10%;
-    padding: 3px; /* Puedes ajustar el margen si es necesario */
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */    
     margin-right: 80px;
-    color: white;
-    text-align: center; /* Centramos el texto horizontalmente */
 }
 
+.NavPages li p {
+    margin: 0; /* Elimina los márgenes predeterminados del párrafo */
+    padding: 15px; /* Añade relleno alrededor del texto */
+    color: white; /* Color del texto */
+}
+
+
+
+.NavPages {
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio alrededor de los elementos */
+    align-items: center;
+    text-align: center;
+}
+
+
 .hovered {
-    background-color: rgb(108, 108, 113); /* Cambia el color al pasar el ratón sobre el elemento */
+    background-color: rgb(29, 29, 103); /* Cambia el color al pasar el ratón sobre el elemento */
 }
 
 .navbar {
     background-color: rgb(4, 4, 53);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-li p {
+.NavPages p {
     font-size: 14px;
     font-weight: bold;
+}
+
+.headerContact li {
+    margin-right: 150px;
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Alineamos verticalmente los elementos */
+    flex-wrap: wrap;
+    white-space: nowrap;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.headerContact p{
+  font-size: 15px
+}   
+
+.NavPages p:hover {
+    background-color: rgb(14, 14, 104); /* Cambia el color al pasar el ratón sobre el elemento */
+}
+
+.NavPages li a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+    text-decoration: none; /* Quitar subrayado del enlace */
 }

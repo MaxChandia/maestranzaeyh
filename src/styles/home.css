@@ -1,0 +1,74 @@
+.inbetweenText {
+    background-color: rgb(4, 4, 53);
+    margin-top: -20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services p{
+    width: 50%;
+    color: rgb(4, 4, 53);
+    font-size: xx-large;
+    margin-left: 50px;
+    position: relative;
+}
+
+.services p::after {
+    content: ""; /* Agregar contenido al seudoelemento */
+    position: absolute; /* Posicionar el seudoelemento */
+    left: 0;
+    bottom: -5px; /* Ajustar la posición del subrayado según sea necesario */
+    width: 50%; /* Extender el subrayado a lo ancho del contenedor del párrafo */
+    height: 5px; /* Grosor del subrayado */
+    background-color: #850e00; /* Color del subrayado */
+}
+
+.services img{
+   width: 50%;
+   height: 100%;
+}
+
+
+.products {
+    height: auto; /* Cambiar a 'auto' para que el contenedor crezca según el contenido */
+    width: 100%;
+    text-align: center; /* Centrar el contenido horizontalmente */
+    margin-bottom: 60px;
+}
+
+.titleProducts {
+    margin-top: 40px;
+}
+
+.imageProducts {
+    margin-top: 5px; /* Agregar un margen superior entre el título y las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageProducts img {
+    height: 200px;
+    width: 300px;
+    margin: 5px; /* Agregar margen entre las imágenes */
+}
+
+.partners {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(4, 4, 53);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+

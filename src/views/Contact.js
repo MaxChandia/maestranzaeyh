@@ -2,34 +2,37 @@ import React from "react";
 import '../styles/contactPage.css';
 
 const ContactPage = () => {
-    return(
+    return (
         <div>
-            <div>
-                <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre"/>
-                    <label>Email</label>
-                    <input></input>
-                    <label>Telefono o Celular</label>
-                    <input></input>
-                    <label>Ciudad</label>
-                    <input></input>
-                    <label>Mensaje</label>
-                    <input></input>
-                </form>
+            <div className="titleContainer"  style={{marginTop:"200px"}}>
+                <h1>Contáctenos</h1>
             </div>
-            <div>
+            <div className="contactPageContainer">
                 <ul>
                     <li><h2>Contacto</h2></li>
                     <li>Teléfono: 55 2 895698</li>
                     <li>Celular: +56 9 42663481</li>
                     <li>negocios@eyhmaestranza.cl</li>
                 </ul>
+                <div className="formulario">
+                <form>
+                    <div class="grupo">
+                        <input placeholder="Nombre" type="text" id="nombre" name="nombre"/>
+                        <input placeholder="Teléfono o celular"/>
+                    </div>
+                    <div class="grupo">
+                        <input placeholder="Ciudad"/>
+                        <input placeholder="Correo electrónico"/>
+                    </div>
+                    <div class="grupo">
+                        <textarea className="comentarios" placeholder="Comentarios..."></textarea>
+                    </div>
+                </form>
+                <button>Enviar</button>
+            </div>
             </div>
         </div>
-
     );
-
 };
 
 export default ContactPage;

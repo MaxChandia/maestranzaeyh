@@ -2,6 +2,9 @@ import React, { useState} from "react";
 import '../styles/navbar.css';
 import { Link } from "react-router-dom";
 import logo from '../logo1.png'
+import { faPhone, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 const Navbar = () => {
@@ -11,62 +14,63 @@ const Navbar = () => {
         <nav className="navbar" style={{width: "100%", margin:"0"}}> 
          <div className="image">
             <img src={logo} alt="logo"/>
-            <ul>
-                <li> Fono </li>
-                <li> Email</li>
+            <ul className="headerContact">
+                <li> 
+                    <p><FontAwesomeIcon icon={faPhone} style={{fontSize:'15px'}}/> : 552895698  +56 9 42663481</p> 
+                </li>
+                <li>
+                    <p><FontAwesomeIcon icon={faEnvelope} style={{fontSize:'20px'}} /> : negocios@eyhmaestranza.cl</p>
+                </li>
+                <li>
+                    <p><FontAwesomeIcon icon={faLocationDot} />: Avenida Industrial 7720 Galpón 28</p>
+                </li>
             </ul>
         </div> 
          <div className="NavPages" style={{height:"50px"}}> 
-            <ul>
-                <Link to="/" className={hoveredItem === "Inicio" ? "hovered" : ""} 
+         <ul className="NavPages">
+                <li>
+                    <Link to="/" className={hoveredItem === "Inicio" ? "hovered" : ""} 
                         onMouseEnter={() => setHoveredItem("Inicio")} 
-                        onMouseLeave={() => setHoveredItem(null)}
-                        style={{ marginRight: "20px"}}>   
-                    <li >
+                        onMouseLeave={() => setHoveredItem(null)}>   
                         <p>INICIO</p>
-                    </li>
-                </Link>
-                <Link to="/quienessomos" className={hoveredItem === "Quienes somos" ? "hovered" : ""} 
-                        onMouseEnter={() => setHoveredItem("Quienes somos")} 
-                        onMouseLeave={() => setHoveredItem(null)}
-                        style={{ marginRight: "20px", whiteSpace:"nowrap"}}>   
-                    <li >
-                        <p>QUIENES SOMOS</p>
-                    </li>
                     </Link>
+                </li>
+                <li>
+                    <Link to="/quienessomos" className={hoveredItem === "Quienes somos" ? "hovered" : ""} 
+                        onMouseEnter={() => setHoveredItem("Quienes somos")} 
+                        onMouseLeave={() => setHoveredItem(null)}>   
+                        <p>QUIENES SOMOS</p>
+                    </Link>
+                </li>
+                <li>
                     <Link to="/servicios" className={hoveredItem === "Servicios" ? "hovered" : ""} 
                         onMouseEnter={() => setHoveredItem("Servicios")} 
-                        onMouseLeave={() => setHoveredItem(null)}
-                        style={{ marginRight: "20px"}}>   
-                        <li >
-                            <p>SERVICIOS</p>
-                        </li>
+                        onMouseLeave={() => setHoveredItem(null)}>   
+                        <p>SERVICIOS</p>
                     </Link>
-                    <Link className={hoveredItem === "Nuestro Taller" ? "hovered" : ""} 
+                </li>
+                <li>
+                    <Link to="/nuestrotaller" className={hoveredItem === "Nuestro Taller" ? "hovered" : ""} 
                         onMouseEnter={() => setHoveredItem("Nuestro Taller")} 
-                        onMouseLeave={() => setHoveredItem(null)}to="/nuestrotaller"
-                        style={{ marginRight: "20px", whiteSpace:"nowrap"}}>
-                        <li>
-                            <p>NUESTRO TALLER</p>
-                        </li> 
+                        onMouseLeave={() => setHoveredItem(null)}>   
+                        <p>NUESTRO TALLER</p>
                     </Link>
-                    <Link  className={hoveredItem === "Ubicación" ? "hovered" : ""} 
-                        onMouseEnter={() => setHoveredItem("Ubicación")} 
-                        onMouseLeave={() => setHoveredItem(null)}
-                        to='/ubicacion'
-                        style={{ marginRight: "20px", whiteSpace:"nowrap"}}>
-                        <li>
-                            <p>CÓMO LLEGAR</p>
-                        </li>
+                </li>
+                <li>
+                    <Link to="/ubicacion" className={hoveredItem === "Ubicacion" ? "hovered" : ""} 
+                        onMouseEnter={() => setHoveredItem("Ubicacion")} 
+                        onMouseLeave={() => setHoveredItem(null)}>   
+                        <p>CÓMO LLEGAR</p>
                     </Link>
+                </li>
+                <li>
                     <Link to="/contacto" className={hoveredItem === "Contacto" ? "hovered" : ""} 
                         onMouseEnter={() => setHoveredItem("Contacto")} 
                         onMouseLeave={() => setHoveredItem(null)}>   
-                    <li >
                         <p>CONTACTO</p>
-                    </li>
-                 </Link>
-             </ul>
+                    </Link>
+                </li>
+            </ul>
         </div>
      </nav>
     );
