@@ -1,0 +1,23 @@
+.ubication {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.map {
+    width: 50%;
+
+}
+
+.mapText {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.map iframe {
+    width: 100%; 
+
+
+}

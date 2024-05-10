@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Contact from "../components/contact";
+import Navbar from "../components/navbar";
 import '../styles/navbar.css';
 import '../styles/home.css';
 import '../styles/contact.css';
@@ -17,6 +18,7 @@ const Home = () =>{
 
   return (
     <div className="App">
+      <Navbar/>
       <Carrousel/>
       <div className="inbetweenText" style={{height:"180px", width:"100%"}}>
         <h1>Más de 10 años aportando al rubro de la metalmecánica</h1>
@@ -66,7 +68,7 @@ const Home = () =>{
             Realizamos trabajos para las siguientes empresas
           </h1>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d646.3208217441506!2d-70.3866029357731!3d-23.599215134192722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ae2ade2ccd6dc9%3A0xe2220217dd966f8d!2sIndustrial%207720%2C%201264236%20Antofagasta!5e0!3m2!1ses!2scl!4v1715144012438!5m2!1ses!2scl" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.6366160212824!2d-70.38654535358513!3d-23.59972520931845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ae2b00176ab64f%3A0xfc2f31e3d356c459!2sEyH%20Maestranza%20Ltda.!5e0!3m2!1ses!2scl!4v1715152061691!5m2!1ses!2scl"  
           width="100%" 
           height="300"
           title="map"

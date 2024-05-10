@@ -1,13 +1,19 @@
 import React from "react";
 import '../styles/contactPage.css';
+import c2 from '../c2.jpg'
+import Navbar from "../components/navbar";
 
 const ContactPage = () => {
     return (
-        <div>
-            <div className="titleContainer"  style={{marginTop:"200px"}}>
-                <h1>Contáctenos</h1>
+        <div className="ContactPageContainer">
+            <Navbar/>
+            <div className="imageContactContainer">
+                <img src={c2}></img>
             </div>
-            <div className="contactPageContainer">
+            <div className="titleContainer">
+                <h1>Comuníquese con nosotros</h1>
+            </div>
+            <div className="contactPageContainer" >
                 <ul>
                     <li><h2>Contacto</h2></li>
                     <li>Teléfono: 55 2 895698</li>

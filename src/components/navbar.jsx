@@ -16,13 +16,13 @@ const Navbar = () => {
             <img src={logo} alt="logo"/>
             <ul className="headerContact">
                 <li> 
-                    <p><FontAwesomeIcon icon={faPhone} style={{fontSize:'15px'}}/> : 552895698  +56 9 42663481</p> 
+                    <p><FontAwesomeIcon icon={faPhone} style={{fontSize:'15px'}}/>  552895698  +56 9 42663481</p> 
                 </li>
                 <li>
-                    <p><FontAwesomeIcon icon={faEnvelope} style={{fontSize:'20px'}} /> : negocios@eyhmaestranza.cl</p>
+                    <p><FontAwesomeIcon icon={faEnvelope} style={{fontSize:'20px'}} />  negocios@eyhmaestranza.cl</p>
                 </li>
                 <li>
-                    <p><FontAwesomeIcon icon={faLocationDot} />: Avenida Industrial 7720 Galpón 28</p>
+                    <p><FontAwesomeIcon icon={faLocationDot} />  Avenida Industrial 7720 Galpón 28</p>
                 </li>
             </ul>
         </div> 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <Link to="/ubicacion" className={hoveredItem === "Ubicacion" ? "hovered" : ""} 
                         onMouseEnter={() => setHoveredItem("Ubicacion")} 
                         onMouseLeave={() => setHoveredItem(null)}>   
-                        <p>CÓMO LLEGAR</p>
+                        <p>UBICACIÓN</p>
                     </Link>
                 </li>
                 <li>

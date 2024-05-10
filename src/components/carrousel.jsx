@@ -1,13 +1,16 @@
 import React from "react";
-import s1 from '../s1.jpg';
+import sec from '../sec.gif';
 import '../styles/carrousel.css'
-
-const slides = [s1]
+import { Link } from "react-router-dom";
 
 const Carrousel = () => {
     return(
         <div className="slideContainer">
-            <img src={slides[0]} className="" />
+            <img src={sec} className="" />
+            <div className="slideText">Más de 10 años aportando al rubro de la metalmecánica</div>
+            <Link to="/contacto">
+            <button className="slideButton" style={{textDecoration:"none"}}>
+                Contactenos</button></Link>
         </div>
     );
 };

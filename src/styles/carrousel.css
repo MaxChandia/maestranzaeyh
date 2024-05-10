@@ -1,14 +1,22 @@
 .slideContainer {
-    height: 800px;
+    height: 700px;
     width: 100%;
     animation: fadeIn 1s ease;
+    margin: 0;
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    overflow: hidden; /* Para evitar que la imagen se desborde del contenedor */
 }
+
 
 
 .slideContainer img {
-    height: 100%;
+    height: auto;
     width: 100%;
+    border: 0;
 }
+
+
 
 @keyframes fadeIn {
     from {
@@ -17,4 +25,39 @@
     to {
         opacity: 1; /* Termina con una opacidad de 1 */
     }
+}
+
+.slideText {
+    position: absolute; /* Posiciona el texto encima de la imagen */
+    top: 50%; /* Alinea el texto al centro vertical */
+    left: 70%; /* Alinea el texto al centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white; /* Color del texto */
+    font-size: 45px; /* Tamaño del texto */
+    text-align: center; /* Alinea el texto al centro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    width: 40%;
+    text-decoration: none;
+
+
+}
+
+.slideText a{
+    text-decoration: none;
+
+}
+
+.slideButton {
+    position: absolute; /* Posiciona el texto encima de la imagen */
+    top: 65%; /* Alinea el texto al centro vertical */
+    left: 70%; /* Alinea el texto al centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #ffffff; /* Color del texto */
+    background-color: #850e00;
+    font-size: 20px; /* Tamaño del texto */
+    text-align: center; /* Alinea el texto al centro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    width: 13%;
+    height: 5%;
+    cursor: pointer;
 }

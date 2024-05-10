@@ -101,7 +101,7 @@
 }   
 
 .NavPages p:hover {
-    background-color: rgb(14, 14, 104); /* Cambia el color al pasar el ratón sobre el elemento */
+    background-color: rgb(29, 29, 103); /* Cambia el color al pasar el ratón sobre el elemento */
 }
 
 .NavPages li a {
